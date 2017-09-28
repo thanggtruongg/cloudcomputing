@@ -46,7 +46,7 @@
              onlogin="checkLoginState();">
         </fb:login-button>
 
-        <a onclick="logOut()">Log Out</a>
+        <a href="/home/index" onclick="logOut()">Log Out</a>
     </div>
 
 @endsection
