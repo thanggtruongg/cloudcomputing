@@ -32,11 +32,13 @@
             if(response.status === 'connected'){
               console.log('Logged in as Authenticated');
               testAPI();
+              document.getElementById('logoutstate').style.display = 'block';
             }
             else{
               console.log('Not Authenticated');
               document.getElementById('status').innerHTML = 'Please log ' +
         'into this app.';
+              document.getElementById('logoutstate').style.display = 'none';
             }
           }
 
@@ -48,10 +50,21 @@
 
           function testAPI() {
             console.log('Welcome!  Fetching your information.... ');
-            FB.api('/me', function(response) {
+            FB.api('/me?fields=id,name,email,birthday,location', function(response) {
               console.log('Successful login for: ' + response.name);
               document.getElementById('status').innerHTML =
-                'Thanks for logging in, ' + response.name + '!';
+                'Welcome, ' + response.name + '!' +'<br>Email: ' + response.email + '<br>Birthday: ' + response.birthday + '<br>Location: ' + response.location;
+            });
+          }
+
+          function logOut()
+          {
+            FB.logout(function(response) 
+            {
+
+              document.getElementById('status').innerHTML =
+                'You have logged out ';
+              document.location.reload();
             });
           }
 </script>

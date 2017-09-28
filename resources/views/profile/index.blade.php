@@ -4,7 +4,7 @@
     $page_title="Profile";
     $user = Auth::user();
 ?>
-<div class="bigdetail">
+<div class="loginform">
     <div id ="nonfacebook" class="hello">
       <h1>Hello, {{ $user->name }}</h1>
     </div>
@@ -13,9 +13,12 @@
         <p>Email: {{ $user->email }}</p>
         <p>Joined: {{ $user->created_at }}</p>
     </div>
-    <div id="facebooklog" class="hello">
-        
-    </div>
+    <fb:login-button scope="public_profile,email" onlogin="checkLoginState();">
+    </fb:login-button>
+        <div id="status"> </div>
+        <div class="fixbutton">
+            <a id="logoutstate" href="#" onclick="logOut()">Log Out </a>
+        </div>
 </div>
 
 <div class="container">
