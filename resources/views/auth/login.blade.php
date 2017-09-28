@@ -39,12 +39,13 @@
         <button type="submit" class='btn btn-primary btn-lg'>Login</button>
     </div>
 </form>
-</div>
-    <div class="fb-btn">
-         <fb:login-button 
+<fb:login-button 
              scope="public_profile,email" 
              onlogin="checkLoginState();">
         </fb:login-button>
+</div>
+    <div class="fb-btn">
+         
 
         <a href= "{{ url('/') }}" onclick="logOut()">Log Out</a>
     </div>
