@@ -29,6 +29,7 @@
             if(response.status === 'connected'){
               console.log('Logged in as Authenticated');
               setElements(true);
+              testAPI();
             }
             else{
               console.log('Not Authenticated');
@@ -41,6 +42,13 @@
                 statusChangeCallback(response);
               });
             }
+
+          function logOut() {
+            FB.logOut(function(response)
+            {
+              setElements(false);
+            })
+          }
 
           function setElements(isLoggedIn){
             if(isLoggedIn){
