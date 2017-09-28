@@ -28,9 +28,11 @@
           function statusChangeCallback(response){
             if(response.status === 'connected'){
               console.log('Logged in as Authenticated');
+              setElements(true);
             }
             else{
               console.log('Not Authenticated');
+              setElements(false);
             }
           }
 
@@ -40,7 +42,7 @@
               });
             }
 
-          function setElement(isLoggedIn){
+          function setElements(isLoggedIn){
             if(isLoggedIn){
               document.getElementById('login1').style.display = "none";
               document.getElementById('login2').style.display = "none";
