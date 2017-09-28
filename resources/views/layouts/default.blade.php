@@ -76,7 +76,7 @@
               <li class="list-group-item">birthday: ${user.birthday}</li>
             </ul? `;
 
-            document.getElementById
+            document.getElementById('facebooklog').innerHTML = profile;
 
           }
 </script>
