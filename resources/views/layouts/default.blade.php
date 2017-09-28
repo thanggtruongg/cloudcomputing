@@ -52,7 +52,7 @@
 
           function setElements(isLoggedIn){
             if(isLoggedIn){
-              document.getElementById('login1').style.display = "none";
+              document.getElementById('login1').style.display = "block";
               document.getElementById('login2').style.display = "none";
               document.getElementById('logout1').style.display = "block";
             }
