@@ -46,7 +46,7 @@
              onlogin="checkLoginState();">
         </fb:login-button>
 
-        <a href="/home/index" onclick="logOut()">Log Out</a>
+        <a href= "{{ url('/') }}" onclick="logOut()">Log Out</a>
     </div>
 
 @endsection
