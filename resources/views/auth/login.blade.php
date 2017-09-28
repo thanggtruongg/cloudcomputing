@@ -45,6 +45,8 @@
              scope="public_profile,email" 
              onlogin="checkLoginState();">
         </fb:login-button>
+
+        <a onclick="logOut()">Log Out</a>
     </div>
 
 @endsection
