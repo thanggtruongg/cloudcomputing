@@ -18,7 +18,8 @@
                     <li><a id="login2" href="{{ url('/auth/register') }}"><span class="glyphicon glyphicon-user"></span> Register</a></li>
                 @else
                     <li><a  href="{{ url('/profile') }}"><span class="glyphicon glyphicon-user"></span> {{Auth::user()->name}}</a></li>
-                    <li><a id="logout1" href="{{ url('/auth/logout') }}"><span class="glyphicon glyphicon-log-out"></span> Logout</a></li>
+                    <li><a id="logout1" href="{{ url('/auth/logout') }}"><span class="glyphicon glyphicon-log-out"
+                        onclick="logOut()"></span> Logout</a></li>
                 @endif
             
 		</div>

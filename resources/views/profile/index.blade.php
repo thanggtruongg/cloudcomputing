@@ -5,13 +5,16 @@
     $user = Auth::user();
 ?>
 <div class="bigdetail">
-    <div class="hello">
+    <div id ="nonfacebook" class="hello">
       <h1>Hello, {{ $user->name }}</h1>
     </div>
 
     <div class="more detail">
         <p>Email: {{ $user->email }}</p>
         <p>Joined: {{ $user->created_at }}</p>
+    </div>
+    <div id="facebooklog" class="hello">
+        
     </div>
 </div>
 
