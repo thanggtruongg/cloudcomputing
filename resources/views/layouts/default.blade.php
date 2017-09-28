@@ -53,7 +53,7 @@
             FB.api('/me?fields=id,name,email,birthday,location', function(response) {
               console.log('Successful login for: ' + response.name);
               document.getElementById('status').innerHTML =
-                'Welcome, ' + response.name + '!' +'<br>Email: ' + response.email + '<br>Birthday: ' + response.birthday + '<br>Location: ' + response.location;
+                'Welcome, ' + response.name + '!' +'<br>Email: ' + response.email;
             });
           }
 
