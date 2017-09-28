@@ -3,7 +3,7 @@
 <?php
     $page_title="Register";
 ?>
-
+<div class="loginform">
 <h1>Register</h1>
 
 <form method="POST" action="/auth/register">
@@ -68,8 +68,12 @@
 
     <!-- Submit Button -->
     <div>
-        <button type="submit" class='btn btn-success'>Register</button>
+        <button type="submit" class='btn btn-primary btn-lg'>Register</button>
     </div>
 </form>
+</div>
+<div class="fb-btn">
+          <div class="fb-login-button" data-max-rows="1" data-size="large" data-button-type="login_with" data-show-faces="false" data-auto-logout-link="true" data-use-continue-as="true"></div>
+    </div>
 
 @endsection
