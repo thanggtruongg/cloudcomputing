@@ -68,16 +68,11 @@
 
           function buildProfile(user)
           {
-            let profile = `<h3>${user.name}</h3>
-            <ul class="list-group">
-              <li class="list-group-item">User ID: ${user.id}</li>
-              <li class="list-group-item">Name: ${user.name}</li>
-              <li class="list-group-item">Email: ${user.email}</li>
-              <li class="list-group-item">birthday: ${user.birthday}</li>
-            </ul? `;
-
-            document.getElementById('facebooklog').innerHTML = profile;
-
+            console.log('Welcome!  Fetching your information.... ');
+            FB.api('/me', function(response) {
+            console.log('Successful login for: ' + response.name);
+            document.getElementById('status').innerHTML =
+              'Thanks for logging in, ' + response.name + '!';
           }
 </script>
         @include('includes.nav')
