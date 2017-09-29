@@ -7,10 +7,10 @@
 
 		
 	<div class="loginform">
-		<h1>Where's My Tradie!</h1>
-	    <p>Welcome to Where's My Tradie
+		<h1>Tradie Centre</h1>
+	    <p>Welcome to Tradie Centre
         <br>
-        Where’s My Tradie can help you complete tasks around your home or business. <br>The individual can acquire one or several advertisements per service they require where they can then read more into the advertisement to see further information such as contact details, quotes and pricing.
+        Tradie Centre can help you complete tasks around your home or business. <br>The individual can acquire one or several advertisements per service they require where they can then read more into the advertisement to see further information such as contact details, quotes and pricing.
       </p>
 	    @if(Auth::check())
 
