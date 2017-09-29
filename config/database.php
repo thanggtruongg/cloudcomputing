@@ -126,7 +126,8 @@ return [
 
     'mongodb' => [
     'driver'   => 'mongodb',
-    'dns' => 'mongodb://thanggtruongg:Dr@gonborn69@tradie-shard-00-00-9eous.mongodb.net:27017,tradie-shard-00-01-9eous.mongodb.net:27017,tradie-shard-00-02-9eous.mongodb.net:27017/test?ssl=true&replicaSet=tradie-shard-0&authSource=admin'
+    'dns' => env('DNS'),
+    'database' => env('DB_NAME'),
         ]
     ],
 
