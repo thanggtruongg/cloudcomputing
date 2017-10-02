@@ -7,7 +7,7 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="{{ url('/') }}">Tradie Centre</a>
+            <img class="logo" href="/" src="{{ URL::to('pictures/logo.png') }}">
         </div>
         <div id="navbar" class="navbar-collapse collapse">
 
@@ -26,11 +26,12 @@
         <div id="main-navigation">
             <ul>
 
-                <li><a href="{{ url('/about') }}">About</a></li>
+                <li><a href="{{ url('/') }}">Home</a></li> |
+                <li><a href="{{ url('/about') }}">About</a></li> |
                 
 
                 <!-- @if(Auth::guest() || Auth::user()->hasRole("Personal") || Auth::user()->hasRole('Admin')) -->
-                    <li><a href="{{ url('/advertisements') }}">Advertisements</a></li> 
+                    <li><a href="{{ url('/advertisements') }}">Advertisements</a></li> |
                     <li><a href="{{ url('/searches/create') }}">Find My Tradie</a></li>                     
                 <!-- @endif -->
                

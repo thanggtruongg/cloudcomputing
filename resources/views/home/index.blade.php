@@ -7,10 +7,10 @@
 
 		
 	<div class="loginform">
-		<h1>Tradie Centre</h1>
-	    <p>Welcome to Tradie Centre
+		<h1>Trades Centre</h1>
+	    <p>Welcome to Trades Centre
         <br>
-        Tradie Centre can help you complete tasks around your home or business. <br>The individual can acquire one or several advertisements per service they require where they can then read more into the advertisement to see further information such as contact details, quotes and pricing.
+        Trades Centre can help you complete tasks around your home or business. <br>The individual can acquire one or several advertisements per service they require where they can then read more into the advertisement to see further information such as contact details, quotes and pricing.
       </p>
 	    @if(Auth::check())
 
@@ -24,11 +24,7 @@
     </div>
         <div class="slideshow" >
             <img class="slideme" src="{{ URL::to('pictures/toolman.png') }}" alt="http://www.jimsbuildingmaintenance.com.au/images/stories/finding-the-right-tradie.jpg" >
-            <!--
-            <img class="slideme" src="{{ URL::to('pictures/plumber.png') }}" width"2000" height="513" alt="https://adelaide.homegiraffe.com.au/wp-content/uploads/2015/01/Forestville-5035.jpg?quality=100.3016070710090" style="width:100%">
-            <img class="slideme" src="{{ URL::to('pictures/carpenter.png') }}" width"2000" height="513" alt="http://www.sewctc.org/uploads/7/6/1/2/7612415/carpenter1-jpeg_orig.jpg" style="width:100%">
-          -->
-    </div>
+        </div>
 
    	 		
    	 		@endsection
