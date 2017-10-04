@@ -28,12 +28,12 @@
 
                 <li><a href="{{ url('/') }}">Home</a></li> |
                 <li><a href="{{ url('/about') }}">About</a></li> |
-                
+                 <li><a href="{{ url('http://lab3v5.appspot.com/') }}">Rate Trade Centre</a></li>|
 
                 <!-- @if(Auth::guest() || Auth::user()->hasRole("Personal") || Auth::user()->hasRole('Admin')) -->
                     <li><a href="{{ url('/advertisements') }}">Advertisements</a></li> |
-                    <li><a href="{{ url('/searches/create') }}">Find My Tradie</a></li>|
-                    <li><a href="{{ url('/rate') }}">Rate Trade Centre</a></li>
+                    <li><a href="{{ url('/searches/create') }}">Find My Tradie</a></li>
+                   
 
                 <!-- @endif -->
                
