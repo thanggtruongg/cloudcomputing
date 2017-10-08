@@ -1,7 +1,7 @@
 # Trades Centre
 RMIT Programming Project course
 
-Change working Directory to /var/www/html by using the command 
+Change working Directory to /var/www/html by using the command <br>
 cd /var/www/html
 Find the link of the project	
 git clone <address of project goes here>
