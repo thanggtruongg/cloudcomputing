@@ -28,7 +28,7 @@
 
                 <li><a href="{{ url('/') }}">Home</a></li> |
                 <li><a href="{{ url('/about') }}">About</a></li> |
-                 <li><a href="{{ url('http://lab3v5.appspot.com/') }}">New Advertisement</a></li>|
+                 <li><a href="{{ url('http://lab3v5.appspot.com/') }}">Company Registration</a></li>|
 
                 <!-- @if(Auth::guest() || Auth::user()->hasRole("Personal") || Auth::user()->hasRole('Admin')) -->
                     <li><a href="{{ url('/advertisements') }}">Advertisements</a></li> |
